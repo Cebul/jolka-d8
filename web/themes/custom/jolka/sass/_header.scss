@@ -1,0 +1,56 @@
+.main-header {
+  height: 300px;
+  background:url(../images/background.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.logo {
+  @include span(1);
+
+  margin-top: 20px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.main-navigation {
+  @include span(5);
+
+  margin-top:25px;
+
+  li {
+    float: left;
+    position: relative;
+  }
+
+  ul ul {
+    position: absolute;
+    width: 200px;
+    background: #fff;
+    display: none;
+
+    li {
+      float: none;
+
+      a {
+        color: #2283a1;
+        display: block;
+        padding: 5px;
+        border-bottom: 1px solid #efefef;
+
+        &:hover {
+          background: #2283a1;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+}

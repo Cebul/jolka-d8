@@ -1,0 +1,16 @@
+
+main {
+    margin-top: 50px;
+}
+
+.layout-content{
+    @include span(8);
+}
+
+.layout-sidebar-first{
+    @include span(2);
+}
+
+.layout-sidebar-second{
+    @include span(2 last);
+}
